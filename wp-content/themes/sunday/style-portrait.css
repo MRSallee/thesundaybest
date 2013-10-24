@@ -628,6 +628,38 @@ hr:before {
     margin-right: 0;
 }
 
+/* image captions */
+
+.photo-frame a {
+    position: relative;
+}
+
+.image-caption {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    width: 100%;
+    
+    font-family: Bitter;
+    color: rgba(255,255,255, 0.9);
+    font-size: 0.8rem;
+    line-height: 1.2em;
+    font-weight: normal;
+    
+    background-color: rgba(0,0,0, 0.4);
+}
+
+.image-caption span {
+    display: block;
+    padding: 0.8rem;
+}
+
+.photo-frame a:nth-child(1):nth-last-child(1) .image-caption {
+    display: inherit;
+}
+
 
 
 #wpadminbar {
