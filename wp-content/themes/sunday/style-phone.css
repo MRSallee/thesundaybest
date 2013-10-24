@@ -232,3 +232,13 @@ hr:before {
     background-image: url(share-rss.png);
     margin-right: 0;
 }
+
+/* image captions */
+
+.image-caption {
+    display: none;
+}
+
+.photo-frame a:nth-child(1):nth-last-child(1) .image-caption {
+    display: inherit;
+}

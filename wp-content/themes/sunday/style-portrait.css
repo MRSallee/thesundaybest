@@ -635,7 +635,6 @@ hr:before {
 }
 
 .image-caption {
-    display: none;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -654,10 +653,6 @@ hr:before {
 .image-caption span {
     display: block;
     padding: 0.8rem;
-}
-
-.photo-frame a:nth-child(1):nth-last-child(1) .image-caption {
-    display: inherit;
 }
 
 
