@@ -64,9 +64,15 @@
 				$('a[href*=".png"], a[href*=".gif"], a[href*=".jpg"]').addClass('swipebox').attr('rel', 'group');
                 
                 $('.photo-frame a img').each(function(){
-                    var imageCaption = $(this).attr('title');
-                    $(this).after('\<div class=\"image-caption\"><span>'+ imageCaption +'</span></div>');
-                    $(this).attr('title','');
+                    if($(this).attr('title')) {
+                        var imageCaption = $(this).attr('title') || '';
+                        $(this).after('\<div class=\"image-caption\"><span>'+ imageCaption +'</span></div>');
+                        $(this).attr('title','');
+                    }
+
+                    else {
+                        
+                    }
                 });
 			});
 

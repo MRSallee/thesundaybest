@@ -65,9 +65,15 @@
 				});
                 
                 $('.photo-frame a img').each(function(){
-                    var imageCaption = $(this).attr('title');
-                    $(this).after('\<div class=\"image-caption\"><span>'+ imageCaption +'</span></div>');
-                    $(this).attr('title','');
+                    if($(this).attr('title')) {
+                        var imageCaption = $(this).attr('title') || '';
+                        $(this).after('\<div class=\"image-caption\"><span>'+ imageCaption +'</span></div>');
+                        $(this).attr('title','');
+                    }
+
+                    else {
+                        
+                    }
                 });
 			});
 
@@ -140,7 +146,7 @@
 
         <!--raw--><div class="photo-frame">
         
-        <a href="http://thesundaybe.st/media/from-earth-phone-27.jpg"><img src="http://thesundaybe.st/media/from-earth-phone-27.jpg" title="Window view from Big Sur cafe"/></a>
+        <a href="http://thesundaybe.st/media/from-earth-phone-27.jpg"><img src="http://thesundaybe.st/media/from-earth-phone-27.jpg"/></a>
         <a href="http://thesundaybe.st/media/from-earth-phone-29.jpg"><img src="http://thesundaybe.st/media/from-earth-phone-29.jpg" title="Our 250s parked next to Ryan's gorgeous Triumph"/></a>
         <a href="http://thesundaybe.st/media/from-earth-phone-28.jpg"><img src="http://thesundaybe.st/media/from-earth-phone-28.jpg" title="Highway 1 through Big Sur is awesome...when not clogged with traffic"/></a>
         <a href="http://thesundaybe.st/media/from-earth-phone-30.jpg"><img src="http://thesundaybe.st/media/from-earth-phone-30.jpg" title="Gallery + cafe + coffee = yes please"/></a>
