@@ -63,6 +63,12 @@
 				$('.photo-frame a').css('background-image', function() {
 					return 'url(' + this.href + ')';
 				});
+                
+                $('.photo-frame a img').each(function(){
+                    var imageCaption = $(this).attr('title');
+                    $(this).after('\<div class=\"image-caption\"><span>'+ imageCaption +'</span></div>');
+                    $(this).attr('title','');
+                });
 			});
 
 			$(document).ready(function () {
@@ -114,41 +120,66 @@
 		</div>
 
 		<p>In late September 2013, a group of motorcyclists in New York made national news for the wrong reasons.</p>
-		<p>An online video documenting an encounter between an SUV and said motorcycle group spread virally on Reddit, through message boards, and over broadcast news reports. The incident confirmed a common belief: Groups of motorcyclists are to be feared because they are likely outlaws.</p>
-		<p>The language used by news outlets to describe the event illustrates a clear bias that favors the SUV driver. The driver &#8220;accidentally hit&#8221; a motorcyclist, the driver was &#8220;fearing for the safety of his wife and 5-month-old child.&#8221; The motorcyclists &#8220;chased&#8221; and &#8220;attacked.&#8221; In nearly all descriptions, the driver of the SUV is made victim and blameless.</p>
-		<blockquote>
+
+        <p>An online video documenting an encounter between an SUV and said motorcycle group spread virally on Reddit, through message boards, and over broadcast news reports. The incident confirmed a common belief: Groups of motorcyclists are to be feared because they are likely outlaws.</p>
+		
+        <p>The language used by news outlets to describe the event illustrates a clear bias that favors the SUV driver. The driver &#8220;accidentally hit&#8221; a motorcyclist, the driver was &#8220;fearing for the safety of his wife and 5-month-old child.&#8221; The motorcyclists &#8220;chased&#8221; and &#8220;attacked.&#8221; In nearly all descriptions, the driver of the SUV is made victim and blameless.</p>
+		
+        <blockquote>
 		<ul>
 		<li><a href="http://www.liveleak.com/view?i=319_1380522846">&#8220;Range Rover runs over bikers in NYC&#8221;<br/>- Liveleak</a></li>
 		<li><a href="http://www.dailymail.co.uk/news/article-2438620/Shocking-video-Range-Rover-crashing-bikers-surround-vehicle-annual-street-ride.html">&#8220;Fearing for the safety of his wife and child&#8221;<br/>- Daily Mail</a></li>
 		</ul>
 		</blockquote>
-		<p>If the spin isn&#8217;t obvious, allow me to offer another possible description of the scene. (Disclaimer: This description is biased as well, but in the other direction.)</p>
-		<div class="pull-quote">The SUV driver paralyzed a man and fled the scene</div>
-		<p>A bunch of everyday people got together to enjoy their motorcycles. When a guy in an SUV hit one of the motorcycles he refused to pull over, assuming the group was a dangerous biker gang. The SUV driver panicked, and belligerently rammed through the exposed motorcyclists with 6,000 lbs. of steel, smashing motorcycles and paralyzing one rider who was left comatose in the middle of a busy freeway.</p>
-		<p>The group was not a biker gang, just a bunch of people that like motorcycles and enjoy company on rides. They wear no shared colors, no unifying vests and patches. Even their bikes share few commonalities to suggest an organized band. No, these motorcyclists are not wanton outlaws, just people on a group ride like one organized in online forums every week in the Bay Area. I&#8217;ve been on many of these rides. Commonly, the riders don&#8217;t even know each other.</p>
-		<blockquote>
+		
+        <p>If the spin isn&#8217;t obvious, allow me to offer another possible description of the scene. (Disclaimer: This description is biased as well, but in the other direction.)</p>
+		
+        <div class="pull-quote">The SUV driver paralyzed a man and fled the scene</div>
+		
+        <p>A bunch of everyday people got together to enjoy their motorcycles. When a guy in an SUV hit one of the motorcycles he refused to pull over, assuming the group was a dangerous biker gang. The SUV driver panicked, and belligerently rammed through the exposed motorcyclists with 6,000 lbs. of steel, smashing motorcycles and paralyzing one rider who was left comatose in the middle of a busy freeway.</p>
+
+        <!--raw--><div class="photo-frame">
+        
+        <a href="http://thesundaybe.st/media/from-earth-phone-27.jpg"><img src="http://thesundaybe.st/media/from-earth-phone-27.jpg" title="Window view from Big Sur cafe"/></a>
+        <a href="http://thesundaybe.st/media/from-earth-phone-29.jpg"><img src="http://thesundaybe.st/media/from-earth-phone-29.jpg" title="Our 250s parked next to Ryan's gorgeous Triumph"/></a>
+        <a href="http://thesundaybe.st/media/from-earth-phone-28.jpg"><img src="http://thesundaybe.st/media/from-earth-phone-28.jpg" title="Highway 1 through Big Sur is awesome...when not clogged with traffic"/></a>
+        <a href="http://thesundaybe.st/media/from-earth-phone-30.jpg"><img src="http://thesundaybe.st/media/from-earth-phone-30.jpg" title="Gallery + cafe + coffee = yes please"/></a>
+        
+        </div><!--/raw-->
+
+        <p>The group was not a biker gang, just a bunch of people that like motorcycles and enjoy company on rides. They wear no shared colors, no unifying vests and patches. Even their bikes share few commonalities to suggest an organized band. No, these motorcyclists are not wanton outlaws, just people on a group ride like one organized in online forums every week in the Bay Area. I&#8217;ve been on many of these rides. Commonly, the riders don&#8217;t even know each other.</p>
+		
+        <blockquote>
 		<ul>
 		<li><a href="http://bayarearidersforum.com/forums/showthread.php?t=441855">&#8220;Safety first always: San Francisco Monthly Night Ride&#8221;<br/>- Bay Area Riders Forum</a></li>
 		<li><a href="http://thesundaybe.st/200-bikes-200-miles/">&#8220;Bay Area folks organize a massive group ride&#8221;<br/>- The Sunday Best</a></li>
 		<li><a href="http://www.dailymail.co.uk/news/article-2445011/5-duty-NYPD-officers-bikers-involved-Edwin-Mieses-Jr-SUV-attack.html">&#8220;Mieses didn&#8217;t know the people he was riding with&#8221;<br/>- Daily Mail</a></li>
 		</ul>
 		</blockquote>
-		<p>What happened after the SUV driver smashed through the group is indefensible, but, if the motorcyclists are presumed innocent in the first altercation, the chase and subsequent violence are less shocking. The SUV driver had used deadly force, paralyzed a man and fled the scene. Pretend the motorcyclists were dressed in police uniforms. The city might praise their heroism. (To be clear, I think dragging a man from his car and beating him is disgusting, even if it&#8217;s done by police.)</p>
-		<p>Another recent bike-versus-auto story, this one from Pennsylvania, details a gruesome collision between an SUV and two motorcycles carrying four bikers. Five people died in the collision, including all four of the riders.</p>
-		<p>I read half a dozen stories covering the same collision, none of them had details to suggest the party at fault. But every one of the stories used language like, &#8220;Two motorcycles collided with an SUV,&#8221; and, &#8220;Motorcycles collided head-on with the SUV, killing five.&#8221; In these sentences, the motorcycles did the colliding and the killing.</p>
-		<blockquote>
+		
+        <p>What happened after the SUV driver smashed through the group is indefensible, but, if the motorcyclists are presumed innocent in the first altercation, the chase and subsequent violence are less shocking. The SUV driver had used deadly force, paralyzed a man and fled the scene. Pretend the motorcyclists were dressed in police uniforms. The city might praise their heroism. (To be clear, I think dragging a man from his car and beating him is disgusting, even if it&#8217;s done by police.)</p>
+		
+        <p>Another recent bike-versus-auto story, this one from Pennsylvania, details a gruesome collision between an SUV and two motorcycles carrying four bikers. Five people died in the collision, including all four of the riders.</p>
+		
+        <p>I read half a dozen stories covering the same collision, none of them had details to suggest the party at fault. But every one of the stories used language like, &#8220;Two motorcycles collided with an SUV,&#8221; and, &#8220;Motorcycles collided head-on with the SUV, killing five.&#8221; In these sentences, the motorcycles did the colliding and the killing.</p>
+		
+        <blockquote>
 		<ul>
 		<li><a href="http://thegardenisland.com/news/national/die-as-motorcycles-suv-crash-in-southern-pa/article_6f258ae6-05f0-5437-8aff-ee1b5172ab7d.html">&#8220;Two motorcycles collided with the SUV, killing five people&#8221;<br/>- The Garden Island</a></li>
 		</ul>
 		</blockquote>
-		<p>I would ignore the bias as an accidental side effect of lazy writing, except that it appeared multiple times in each article I read. The motorcycles hit the SUV, not the other way around. Despite no one having details to suggest the motorcyclists were at fault, that is the language reporters naturally adopted. And never mind that it is improbable that two motorcycles made the same mistake at the same time and hit the same SUV.</p>
-		<div class="photo-frame">
+		
+        <p>I would ignore the bias as an accidental side effect of lazy writing, except that it appeared multiple times in each article I read. The motorcycles hit the SUV, not the other way around. Despite no one having details to suggest the motorcyclists were at fault, that is the language reporters naturally adopted. And never mind that it is improbable that two motorcycles made the same mistake at the same time and hit the same SUV.</p>
+		
+        <div class="photo-frame">
 
 		<a href="http://thesundaybe.st/media/not-a-gang-01.jpg"><img src="http://thesundaybe.st/media/not-a-gang-01.jpg" title="Not a motorcycle gang"/></a>
 
 		</div>
-		<p>The real-world effect of the bias is difficult to measure, but amounts to much more than hurt feelings. In upstate New York, a &#8220;boss&#8221; instructed his local police force to crack down on motorcyclists as a direct response the New York City incident. A community activist wants harsher penalties for motorcyclists that break traffic laws. An NYC mayoral candidate plays to the fear for political gain. In Australia, a new law denies bail to motorcyclists &#8220;suspected&#8221; of biker gang affiliation.</p>
-		<blockquote>
+		
+        <p>The real-world effect of the bias is difficult to measure, but amounts to much more than hurt feelings. In upstate New York, a &#8220;boss&#8221; instructed his local police force to crack down on motorcyclists as a direct response the New York City incident. A community activist wants harsher penalties for motorcyclists that break traffic laws. An NYC mayoral candidate plays to the fear for political gain. In Australia, a new law denies bail to motorcyclists &#8220;suspected&#8221; of biker gang affiliation.</p>
+		
+        <blockquote>
 		<ul>
 		<li><a href="http://www.youtube.com/watch?v=ZHxF7XFv0xk">&#8220;Police harass bikers on Palisades Parkway&#8221;<br/>- YouTube</a></li>
 		<li><a href="http://pix11.com/2013/10/03/eyewitness-says-bikers-went-after-suv-drivers-wife-during-brutal-attack/">&#8220;Activists calling for harsher punishments for motorcyclists&#8221;<br/>- WPIX-TV</a></li>
@@ -156,16 +187,22 @@
 		<li><a href="http://www.brisbanetimes.com.au/queensland/no-bail-for-bikies-no-matter-how-petty-the-crime-20131012-2veyd.html">&#8220;No bail for bikies no matter how petty the crime&#8221;<br/>- Brisbane Times</a></li>
 		</ul>
 		</blockquote>
-		<p>This prejudice isn&#8217;t rooted in a reality where most have friends and family members who&#8217;ve been harmed by motorcyclists. (The reverse, however, is true; most bikers know fellow riders who&#8217;ve been injured or killed by cars.)</p>
-		<p>There is a widely-held opinion that motorcycles are dangerous. I suppose I agree. But that reasonable mental association imparts a modicum of bias that suggests, in the event of a dangerous outcome, the most dangerous element is to blame.</p>
-		<blockquote>
+		
+        <p>This prejudice isn&#8217;t rooted in a reality where most have friends and family members who&#8217;ve been harmed by motorcyclists. (The reverse, however, is true; most bikers know fellow riders who&#8217;ve been injured or killed by cars.)</p>
+		
+        <p>There is a widely-held opinion that motorcycles are dangerous. I suppose I agree. But that reasonable mental association imparts a modicum of bias that suggests, in the event of a dangerous outcome, the most dangerous element is to blame.</p>
+		
+        <blockquote>
 		<ul>
 		<li><a href="http://thesundaybe.st/motorcycle-mythos/">&#8220;It&#8217;s myth that motorcyclists are badasses&#8221;<br/>- The Sunday Best</a></li>
 		</ul>
 		</blockquote>
-		<p>I want to be careful to not build a case of &#8220;us versus them.&#8221; In any altercation or collision between a motorcycle and a car, there are individual people involved. I have no allegiance or duty to defend one of those people because of his or her mode of transport.</p>
-		<p>In the case of the New York bikers and the family man in the SUV, I am not taking sides. I do not have the details to confirm that the bikers aren&#8217;t a terror and 100% to blame. I do not know if the SUV driver behaved rationally to save his family from a real threat. From my seat in California, the New York incident looks the result of bad decisions all around. But I have only the information that most others (aside from a handful of investigators and the individuals involved) have seen and read. From this information, I can make few conclusions.</p>
-		<p>And that should be okay. &#8220;I don&#8217;t know&#8221; is an acceptable response to a lot of questions. It is my default, in my better moments. Humility betters bias, assumption, and panic.</p>
+		
+        <p>I want to be careful to not build a case of &#8220;us versus them.&#8221; In any altercation or collision between a motorcycle and a car, there are individual people involved. I have no allegiance or duty to defend one of those people because of his or her mode of transport.</p>
+		
+        <p>In the case of the New York bikers and the family man in the SUV, I am not taking sides. I do not have the details to confirm that the bikers aren&#8217;t a terror and 100% to blame. I do not know if the SUV driver behaved rationally to save his family from a real threat. From my seat in California, the New York incident looks the result of bad decisions all around. But I have only the information that most others (aside from a handful of investigators and the individuals involved) have seen and read. From this information, I can make few conclusions.</p>
+		
+        <p>And that should be okay. &#8220;I don&#8217;t know&#8221; is an acceptable response to a lot of questions. It is my default, in my better moments. Humility betters bias, assumption, and panic.</p>
 		
 		<div class="end-divider"><hr/></div>
 		
