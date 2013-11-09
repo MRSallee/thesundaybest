@@ -74,6 +74,11 @@ body {
     -webkit-text-size-adjust:none;
 }
 
+::selection {
+    background-color: #333;
+    color: #fff;
+}
+
 .header {
     overflow:hidden;
     position:relative;
