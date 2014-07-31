@@ -180,25 +180,25 @@ p {
     margin: 1.8em auto 1.8em auto;
 }
 
-p a, ul a, .about-author a {
+p a, ul a, ol a, .about-author a {
     color: #333;
     text-decoration: none;
     border-bottom: .1rem dotted #ccc;
 }
 
-p a:visited, ul a:visited, .about-author a:visited {
+p a:visited, ul a:visited, ol a:visited, .about-author a:visited {
     color: #333;
     text-decoration: none;
     border-bottom: .1rem dotted #ccc;
 }
 
-ul {
+ul, ol {
     width: 54vw;
     font-family: Bitter;
     margin: 1.8em auto 1.8em auto;
 }
 
-ul li {
+ul li, ol li {
 	margin-bottom: .8em;
 	list-style: square;
 }
