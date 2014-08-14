@@ -23,7 +23,7 @@
 
 			<div class="about-author">
 				<div class="author-pic"><img src="http://thesundaybe.st/wp-content/themes/sunday/author-pic.jpg"/></div>
-				<div class="author-text"><strong>I'm Mark Ryan Sallee.</strong> I live and work in the San Francisco Bay Area, where motorcycles rule. Quality excites me. Follow me on <a href="http://twitter.com/mrsallee">Twitter</a>, <a href="http://instagram.com/mrsallee">Instagram</a> and <a href="http://www.linkedin.com/in/markryansallee">LinkedIn</a>.</div>
+				<div class="author-text"><strong>I'm Mark Ryan Sallee.</strong> I live and work in the San Francisco Bay Area, where motorcycles rule. Quality excites me. Follow me on <a href="http://twitter.com/mrsallee">Twitter</a> and <a href="http://instagram.com/mrsallee">Instagram</a>.</div>
 			</div>
 
 			<div class="share-bar">
