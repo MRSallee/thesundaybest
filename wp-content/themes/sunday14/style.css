@@ -1,0 +1,915 @@
+
+/* Elements */
+
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+    font-family: Montserrat;
+    font-family: Fontin;
+    font-family: Bitter;
+    color: #222;
+    font-size: 1vw;
+    line-height: 1em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust:none;
+}
+
+body {
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+    font-size: 0;
+    line-height: 0;
+    -webkit-text-size-adjust:none;
+}
+
+::selection {
+    background-color: #666;
+    color: #eee;
+}
+
+h1 {
+    font-family: Bitter;
+    font-weight: normal;
+}
+
+h2 {
+    width: 62rem;
+    padding: 0 0 2rem 0;
+    margin: 6rem auto -1rem auto;
+    
+    border-bottom: 1px solid #888;
+    
+    color: #333;
+    font-family: Bitter;
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 1em;
+    letter-spacing: -0.03em;
+}
+
+h3 {
+    width: 62rem;
+    margin: 4rem auto -2rem auto;
+    
+    color: #666;
+    font-family: Bitter;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.6em;
+}
+
+
+
+/* Content */
+
+.content {
+    position: relative;
+    
+    padding: 3rem 0 5rem 0;
+    
+    background-color: #eee;
+    
+    color: #222;
+}
+
+.content p {
+    width: 62rem;
+    margin: 3rem auto;
+    
+    font-family: Merriweather;
+    font-weight: 100;
+    font-size: 1.6rem;
+    line-height: 1.6em;
+}
+
+.content p a, .content p a:hover, .content p a:visited, .content ul a, .content ul a:hover, .content ul a:visited, .content ol a, .content ol a:hover, .content ol a:visited, .content .byline a, .content .byline a:hover, .content .byline a:visited {
+    position: relative;
+    
+    border-bottom: 1px dotted #ccc;
+    
+    color: #222;
+    text-decoration: none;
+}
+
+.content p a[href^="http://thesundaybe.st"], .content p a[href^="http://thesundaybe.st"]:hover, .content p a[href^="http://thesundaybe.st"]:visited, .content p ul[href^="http://thesundaybe.st"], .content ul a[href^="http://thesundaybe.st"]:hover, .content ul a[href^="http://thesundaybe.st"]:visited, .content p ol[href^="http://thesundaybe.st"], .content ol a[href^="http://thesundaybe.st"]:hover, .content ol a[href^="http://thesundaybe.st"]:visited, .content .byline a[href^="http://thesundaybe.st"], .content .byline a[href^="http://thesundaybe.st"]:hover, .content .byline a[href^="http://thesundaybe.st"]:visited {
+    border-bottom: 1px dotted #222;
+}
+
+.content i, .content em {
+    font-style: italic;
+}
+
+.content b, .content strong {
+    font-weight: 600;
+}
+
+.content ul, .content ol {
+    box-sizing: border-box;
+    width: 62rem;
+    padding: 0 0 0 4rem;
+    margin: 3rem auto;
+    
+    font-family: Merriweather;
+    font-weight: 100;
+    font-size: 1.6rem;
+    line-height: 1.6em;
+}
+
+.content ul li {
+    list-style: square;
+}
+
+.content ul li + li, .content ol li + li {
+    margin-top: 1.6rem;
+}
+
+.content blockquote {
+    box-sizing: border-box;
+    width: 62rem;
+    padding: 1px 4rem;
+    margin: 3rem auto;
+    
+    border-left: 1px solid #888;
+    
+    color: #666;
+    font-family: Merriweather;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 1.6rem;
+    line-height: 1.6em;
+}
+
+.content blockquote p, .content blockquote ul, .content blockquote ol {
+    width: auto;
+}
+
+.pull-quote {
+    box-sizing: border-box;
+    width: 62rem;
+    padding: 6rem 8rem;
+    margin: 4rem auto;
+    
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    
+    color: #aaa;
+    font-family: Merriweather;
+    font-weight: 100;
+    font-size: 3.2rem;
+    line-height: 1.6em;
+    text-align: center;
+    letter-spacing: -0.03em;
+    font-style: italic;
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    box-sizing: border-box;
+    width: 100%;
+    padding: 3.2rem 2rem 1rem 2rem;
+    
+    background: linear-gradient(to bottom, rgba(55,55,55, 0.0), rgba(55,55,55, 0.6) 4.2rem);
+    
+    color: rgba(238,238,238, 0.8);
+    font-family: Merriweather;
+    font-weight: 100;
+    font-size: 1.4rem;
+    line-height: 1.6em;
+    text-decoration: none;
+}
+
+.video-frame {
+    width: 78rem;
+    height: 44rem;
+    margin: 4rem auto;
+    text-align: center;
+}
+
+.video-frame iframe {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.google-map {
+    display: none;
+}
+
+#wpstats {
+    width: 0;
+    height: 0;
+}
+
+
+
+/* Hero */
+
+.hero-container {
+    position: relative;
+    
+    width: 100%;
+    height: 100%;
+    
+    background-color: #222;
+    
+    font-size: 0;
+    line-height: 0;
+}
+
+.hero-top {
+    position: relative;
+    z-index: 2;
+    
+    padding: 4rem 0 0 0;
+    
+    opacity: 0.6;
+    transition: opacity 0.1s ease;
+}
+
+.hero-top:hover {
+    opacity: 1.0;
+}
+
+.hero-top, .hero-top a {
+    color: #eee;
+    text-decoration: none;
+}
+
+.hero-logo {
+    font-family: Fontin;
+    font-size: 4rem;
+    line-height: 2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.hero-divider {
+    position: relative;
+    width: 62rem;
+    margin: 0 auto 0.1em auto;
+    
+    font-family: Bitter;
+    font-size: 4rem;
+    line-height: 0.9em;
+    letter-spacing: -0.03em;
+    text-align: center;
+}
+
+.hero-divider:before {
+    position: absolute;
+    top: 1.9rem;
+    left: 0;
+    
+    content: '';
+    display: block;
+    width: 28rem;
+    height: 0.2rem;
+    
+    background-color: #eee;
+}
+
+.hero-divider:after {
+    position: absolute;
+    top: 1.9rem;
+    right: 0;
+    
+    content: '';
+    display: block;
+    width: 28rem;
+    height: 0.2rem;
+    
+    background-color: #eee;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    
+    box-sizing: border-box;
+    width: 46rem;
+    width: 58rem;
+    height: calc(100% - 22rem);
+    padding: 2rem 0;
+    margin: 0 auto;
+    
+    color: #eee;
+}
+
+.hero-content:before {
+    vertical-align: middle;
+    
+    display: inline-block;
+    content: '';
+    width: 0;
+    height: 100%;
+}
+
+.hero-meta {
+    vertical-align: middle;
+    
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 0 3rem 0;
+}
+
+h1.hero-headline {
+    display: block;
+    width: 100%;
+    margin: 0;
+    
+    font-family: Bitter;
+    font-weight: 600;
+    font-size: 6.4rem;
+    line-height: 1em;
+    text-align: center;
+    letter-spacing: -0.03em;
+}
+
+.hero-subheadline {
+    margin: 2rem 0 0 0;
+    
+    font-family: Merriweather;
+    font-weight: 100;
+    font-size: 1.6rem;
+    line-height: 1.6em;
+    text-align: center;
+}
+
+.hero-date {
+    position: relative;
+    z-index: 2;
+    
+    padding: 0 0 4rem 0;
+    margin: 0 0 0 0;
+    
+    color: rgba(255,255,255, 0.3);
+    font-family: Merriweather;
+    font-weight: 100;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+    width: 100%;
+    height: 100%;
+    
+    background-size: cover;
+    background-position: center center;
+    
+    opacity: 0.1;
+}
+
+
+
+/* Multi-pages */
+
+.multi-pages {
+    position: absolute;
+    z-index: 2;
+    
+    width: 100%;
+    margin-top: -3rem;
+    
+    background-color: rgba(238,238,238, 0.9);
+    border-top: 1px solid #ddd;
+    
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+}
+
+.multi-pages a {
+    position: relative;
+    vertical-align: middle;
+    
+    display: inline-block;
+    padding: 1.6rem 2rem;
+    
+    border-right: 1px solid #ddd;
+    
+    color: #888;
+    font-family: Bitter;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 1em;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-decoration: none;
+    
+    transition: all 0.1s ease;
+}
+
+.multi-pages a:hover, .multi-pages.absolute-bottom a:hover {
+    opacity: 1.0;
+    color: #666;
+}
+
+.multi-pages a:nth-last-child(1) {
+    border-right: none;
+}
+
+.multi-pages a.current {
+    
+}
+
+.multi-pages a.current:before {
+    position: absolute;
+    top: 1.5rem;
+    left: -0.8rem;
+    z-index: 2;
+    
+    content: '';
+    display: inline-block;
+    box-sizing: border-box;
+    width: 1.6rem;
+    height: 1.6rem;
+    
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 50% 0 50% 50%;
+    
+    transform: rotate(45deg);
+}
+
+.multi-pages a.current + a:before {
+    vertical-align: middle;
+    
+    content: 'Next:';
+    display: inline-block;
+    box-sizing: border-box;
+    width: 0;
+    padding: 0;
+    
+    font-family: Merriweather;
+    font-weight: 100;
+    font-size: 1.2rem;
+    line-height: 0;
+    letter-spacing: 0;
+    text-align: left;
+    
+    opacity: 0.0;
+    transition: all 0.1s ease;
+}
+
+.multi-pages.absolute-bottom a.current + a {
+    margin-left: -1px;
+    border-left: 1px solid #ddd;
+}
+
+.multi-pages.absolute-bottom a.current + a:before {
+    width: 4.2rem;
+    
+    opacity: 1.0;
+}
+
+.multi-pages.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.multi-pages.absolute-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.multi-pages.absolute-bottom a {
+    opacity: 0.2;
+}
+
+.multi-pages.absolute-bottom .current + a {
+    opacity: 1.0;
+}
+
+
+
+/* Byline */
+
+.byline {
+    padding: 0 0 0 0;
+}
+
+.byline-divider {
+    position: relative;
+    width: 62rem;
+    margin: 0 auto 0.1em auto;
+    
+    color: #333;
+    font-family: Bitter;
+    font-size: 4rem;
+    line-height: 0.9em;
+    letter-spacing: -0.03em;
+    text-align: center;
+}
+
+.byline-divider:before {
+    position: absolute;
+    top: 1.9rem;
+    left: 0;
+    
+    content: '';
+    display: block;
+    width: 28rem;
+    height: 0.2rem;
+    
+    background-color: #333;
+}
+
+.byline-divider:after {
+    position: absolute;
+    top: 1.9rem;
+    right: 0;
+    
+    content: '';
+    display: block;
+    width: 28rem;
+    height: 0.2rem;
+    
+    background-color: #333;
+}
+
+.byline-content {
+    width: 62rem;
+    margin: 2rem auto 0 auto;
+    
+    font-size: 0;
+    line-height: 0;
+}
+
+.byline-image {
+    vertical-align: middle;
+    
+    display: inline-block;
+    width: 6rem;
+    height: 6rem;
+    
+    background-image: url('http://thesundaybe.st/wp-content/themes/sunday/author-pic.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    
+    opacity: 0.5;
+}
+
+.byline-copy {
+    vertical-align: middle;
+    
+    box-sizing: border-box;
+    display: inline-block;
+    width: 54rem;
+    padding: 0 0 0 2rem;
+    margin: 0 0 0 2rem;
+    
+    border-left: 1px solid #ddd;
+    
+    font-family: Merriweather;
+    font-weight: 100;
+    font-size: 1.6rem;
+    line-height: 1.6em;
+}
+
+p.authorship {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    
+    font-size: 0;
+    line-height: 0;
+    
+    opacity: 0.0;
+}
+
+p.authorship a {
+    text-decoration: none;
+}
+
+
+
+/* Previous */
+
+.archive {
+    padding: 5rem 0 1rem 0;
+    
+    background-color: #eee;
+    border-top: 1px solid #ddd;
+}
+
+.previous-container {
+    position: relative;
+    
+    width: 78rem;
+    height: 52rem;
+    margin: 0 auto;
+    
+    background-color: #222;
+    
+    font-size: 0;
+    line-height: 0;
+}
+
+.previous-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.previous-heading {
+    position: relative;
+    z-index: 2;
+    
+    padding: 4rem 0 0 0;
+    margin: 0 0 0 0;
+    
+    color: rgba(255,255,255, 0.3);
+    font-family: Merriweather;
+    font-weight: 100;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.previous-content {
+    position: relative;
+    z-index: 2;
+    
+    width: 46rem;
+    height: calc(100% - 14.4rem);
+    margin: 0 auto;
+    
+    color: #eee;
+}
+
+.previous-content:before {
+    vertical-align: middle;
+    
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 100%;
+}
+
+.previous-meta {
+    vertical-align: middle;
+    
+    display: inline-block;
+    width: 100%;
+}
+
+.previous-headline {
+    display: block;
+    width: 100%;
+    margin: 0;
+    
+    font-family: Bitter;
+    font-weight: 600;
+    font-size: 4.8rem;
+    line-height: 1em;
+    text-align: center;
+    letter-spacing: -0.03em;
+}
+
+.previous-subheadline {
+    margin: 2rem 0 0 0;
+    
+    font-family: Merriweather;
+    font-weight: 100;
+    font-size: 1.6rem;
+    line-height: 1.6em;
+    text-align: center;
+}
+
+.previous-cta {
+    position: relative;
+    z-index: 2;
+    
+    box-sizing: border-box;
+    width: 18rem;
+    padding: 1.6rem 2rem;
+    margin: 0 auto 4rem auto;
+    
+    background-color: #eee;
+    
+    color: #666;
+    font-family: Merriweather;
+    font-weight: 100;
+    font-size: 1.2rem;
+    line-height: 1em;
+    text-align: center;
+}
+
+.previous-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+    width: 100%;
+    height: 100%;
+    
+    background-size: cover;
+    background-position: center center;
+    
+    opacity: 0.1;
+}
+
+
+
+/* Archive */
+
+.archive h2 {
+    margin: 6rem auto 0 auto;
+}
+
+.archive-container {
+    width: 62rem;
+    margin: 0 auto;
+    
+    color: #222;
+    font-size: 0;
+    line-height: 0;
+}
+
+.archive-story {
+    position: relative;
+    
+    margin: 4rem 0;
+}
+
+.archive-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+    display: block;
+    width: 100%;
+    height: 100%;
+    
+    text-decoration: none;
+}
+
+.archive-link.current:before {
+    vertical-align: middle;
+    
+    position: relative;
+    top: 0;
+    left: 7rem;
+    z-index: 2;
+    
+    content: '';
+    display: inline-block;
+    box-sizing: border-box;
+    width: 1.6rem;
+    height: 1.6rem;
+    
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 50% 0 50% 50%;
+    
+    transform: rotate(45deg);
+}
+
+.archive-link.current:after {
+    vertical-align: middle;
+    
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 100%;
+}
+
+.archive-image {
+    vertical-align: middle;
+    
+    display: inline-block;
+    width: 6rem;
+    height: 6rem;
+    margin: 0 2rem 0 0;
+    
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    opacity: 0.5;
+}
+
+.archive-meta {
+    vertical-align: middle;
+    
+    display: inline-block;
+    box-sizing: border-box;
+    width: 54rem;
+    padding: 0 0 0 2rem;
+    
+    border-left: 1px solid #ddd;
+}
+
+.archive-headline {
+    margin: 0;
+    
+    font-family: Bitter;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 1em;
+    letter-spacing: -0.03em;
+}
+
+.archive-subheadline {
+    margin: 1rem 0 0 0;
+    
+    font-family: Merriweather;
+    font-weight: 100;
+    font-size: 1.6rem;
+    line-height: 1.6em;
+}
+
+.archive-story:nth-child(1n + 6) .archive-image {
+    display: none;
+}
+
+.archive-story:nth-child(1n + 6) .archive-meta {
+    margin: 0 0 0 8rem;
+    border-left: 1px solid transparent;
+}
+
+
+
+/* Footer */
+
+footer.footer {
+    padding: 5rem 0;
+    
+    background-color: #222;
+    
+    text-align: center;
+}
+
+.footer .copyright {
+    margin: 5rem 0 0 0;
+    
+    color: rgba(255,255,255, 0.3);
+    font-family: Merriweather;
+    font-weight: 100;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.footer .copyright span.tsb {
+    color: rgba(255,255,255, 0.3);
+    font-family: Fontin;
+    font-weight: 300;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.footer .copyright span {
+    color: rgba(255,255,255, 0.1);
+    font-size: 1rem;
+}
+
+.footer .copyright a {
+    border-bottom: 1px dotted rgba(255,255,255, 0.3);
+    
+    color: rgba(255,255,255, 0.3);
+    text-decoration: none;
+}
+
+.footer .mark {
+    display: inline-block;
+    width: 10rem;
+    height: 10rem;
+    
+    background-image: url('data:image/svg+xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE3LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCA3MjAgNzIwIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA3MjAgNzIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8cGF0aCBmaWxsPSIjRUVFRUVFIiBkPSJNNDIzLjIsNTcuMWMtMjAuNC00LjItNDEuNS02LjUtNjMuMi02LjVzLTQyLjgsMi4yLTYzLjIsNi41QzE1Ni4zLDg2LjIsNTAuNiwyMTAuOCw1MC42LDM2MAoJCWMwLDMzLjcsNS40LDY2LjIsMTUuNCw5Ni41YzEzLjQsNDAuOSwzNS4xLDc4LjEsNjMuMiwxMDkuNGM1Ni43LDYzLjUsMTM5LjEsMTAzLjQsMjMwLjgsMTAzLjRTNTM0LjIsNjI5LjQsNTkwLjgsNTY2CgkJYzI4LTMxLjQsNDkuOC02OC41LDYzLjItMTA5LjRjMTAtMzAuNCwxNS40LTYyLjgsMTUuNC05Ni41QzY2OS40LDIxMC44LDU2My43LDg2LjIsNDIzLjIsNTcuMXogTTM2MCw1OTIKCQljLTk0LDAtMTgwLjItMzMuNi0yNDcuMy04OS40Yy0zLjYtMjEuMi01LjUtNDMuMS01LjUtNjUuM2MwLTE2Ni41LDEwNS4yLTMwOC40LDI1Mi44LTM2Mi45YzE0Ny42LDU0LjUsMjUyLjgsMTk2LjQsMjUyLjgsMzYyLjkKCQljMCwyMi4zLTEuOSw0NC4xLTUuNSw2NS4zQzU0MC4yLDU1OC41LDQ1NCw1OTIsMzYwLDU5MnoiLz4KCTxwYXRoIGZpbGw9IiNFRUVFRUUiIGQ9Ik00MDAuMSwyODIuOWMtOC40LDAtMTYuMS0yLjQtMjMuNi01LjdjLTEwLjMtNC42LTIwLjQtMTAuOS0zMS43LTE1LjNjLTcuNy0zLTE2LTUuMS0yNS4zLTUuMQoJCWMtNDIsMC02Mi43LDQ1LjktNjIuNyw0NS45bDI0LjEsMTkuOGMwLDAsMTUuNi0yMSwzNi4yLTIxYzExLjIsMCwyMS42LDQuMSwzMi4xLDljMC44LDMsMS4zLDYuMSwxLjMsOS4zYzAsMjgtMjYuMSw0Ny41LTI2LjEsODAuNgoJCWMwLDQyLDQ1LjksNjIuNyw0NS45LDYyLjdsMTkuOC0yNC4xYzAsMC0yMS0xNS42LTIxLTM2LjJjMC0yNS43LDIxLjQtNDcuMywyNS40LTc1LjVjMi4yLDAuMyw0LjUsMC40LDYuOSwwLjQKCQljMzguOSwwLDYxLjUtNDYuNyw2MS41LTQ2LjdsLTI1LjctMTkuNUM0MzcuNCwyNjEuNSw0MjEuNSwyODIuOSw0MDAuMSwyODIuOXoiLz4KPC9nPgo8L3N2Zz4=');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    text-decoration: none;
+}
