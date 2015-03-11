@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,user-scalable=no">
+        <title>We come from Earth, II: Death Valley - The Sunday Best, a motorcycle blog</title>
+        <link rel="stylesheet" type="text/css" href="grid.css"/>
+        <link rel="stylesheet" type="text/css" href="fonts.css"/>
+        <link rel="stylesheet" type="text/css" href="style-hero.css"/>
+        <link rel="stylesheet" type="text/css" href="style-mobile.css"/>
+        <link rel="stylesheet" type="text/css" href="style-tablet.css"/>
+        <link rel="stylesheet" type="text/css" href="gallery.css"/>
+        <link rel="shortcut icon" href="http://thesundaybe.st/wp-content/themes/sunday/tsb-favicon.png"/>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="nav.js"></script>
+        <script src="http://thesundaybe.st/js-global/swipebox/source/jquery.swipebox.js"></script>
+        <link rel="stylesheet" href="swipebox.css" type="text/css"/>
+        
+        <script type="text/javascript">
+            $(window).load(function() {
+				$('.photo-frame a').css('background-image', function() {
+					return 'url(' + this.href + ')';
+				});
+                $('.photo-frame a').addClass('swipebox').attr('rel', 'group');
+                $('.swipebox').swipebox();
+                $('.photo-frame a img').each(function(){
+                    if($(this).attr('title')) {
+                        var imageCaption = $(this).attr('title') || '';
+                        $(this).after('<div class="image-caption"><span>'+ imageCaption +'</span></div>');
+                        $(this).attr('title','');
+                    }
+                    else {
+                        
+                    }
+                });
+
+                $(window).resize(function () {
+                    $('html').css('font-size', '1vw');
+                    stickyIni();
+                });
+                
+                $('.g-container').click(function() {
+                    $('.g-container').toggleClass('g-hide');
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="g-container g-hide">
+            <div class="g-col c-1">1</div>
+            <div class="g-col c-1">2</div>
+            <div class="g-col c-1">3</div>
+            <div class="g-col c-1">4</div>
+            <div class="g-col c-1">5</div>
+            <div class="g-col c-1">6</div>
+            <div class="g-col c-1">7</div>
+            <div class="g-col c-1">8</div>
+            <div class="g-col c-1">9</div>
+            <div class="g-col c-1">10</div>
+            <div class="g-col c-1">11</div>
+            <div class="g-col c-1">12</div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-inner">
+                <div class="hero-top">
+                    <div class="hero-logo"><a href="">The Sunday Best</a></div>
+                    <div class="hero-divider">~</div>
+                </div>
+
+                <div class="hero-content">
+                    <div class="hero-meta">
+                        <h1 class="hero-headline">We come from Earth, II: Death Valley</h1>
+                        <div class="hero-subheadline">Fond memories born from misery. And wind</div>
+                    </div>
+                </div>
+
+                <div class="hero-date">Published July 21, 2013</div>
+            </div>
+            
+            <div class="hero-image" style="background-image: url('http://thesundaybe.st/media/header_we-come-from-earth-ii-death-valley.jpg');"></div>
+        </div>
+    </body>
+</html>

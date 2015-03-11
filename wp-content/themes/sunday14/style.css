@@ -19,9 +19,9 @@ html {
 }
 
 body {
-    width: 100vw;
+    width: 100rem;
     height: 100%;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     overflow-x: hidden;
     
@@ -114,7 +114,7 @@ h3 {
 .content ul, .content ol {
     box-sizing: border-box;
     width: 62rem;
-    padding: 0 0 0 4rem;
+    padding: 0 0 0 2em;
     margin: 3rem auto;
     
     font-family: Merriweather;
@@ -128,7 +128,7 @@ h3 {
 }
 
 .content ul li + li, .content ol li + li {
-    margin-top: 1.6rem;
+    margin-top: 1em;
 }
 
 .content blockquote {
@@ -147,7 +147,7 @@ h3 {
     line-height: 1.6em;
 }
 
-.content blockquote p, .content blockquote ul, .content blockquote ol {
+.content blockquote p, .content blockquote h2, .content blockquote h3, .content blockquote ul, .content blockquote ol {
     width: auto;
 }
 
@@ -220,7 +220,9 @@ h3 {
     position: relative;
     
     width: 100%;
-    height: 100%;
+    height: 67rem;
+    max-height: 100vh;
+    min-height: 50rem;
     
     background-color: #222;
     
@@ -298,7 +300,6 @@ h3 {
     z-index: 2;
     
     box-sizing: border-box;
-    width: 46rem;
     width: 58rem;
     height: calc(100% - 22rem);
     padding: 2rem 0;
@@ -395,6 +396,13 @@ h1.hero-headline {
     font-size: 0;
     line-height: 0;
     text-align: center;
+    
+    opacity: 0.0;
+    transition: opacity 0.2s ease;
+}
+
+.multi-pages.visible {
+    opacity: 1.0;
 }
 
 .multi-pages a {
@@ -437,7 +445,7 @@ h1.hero-headline {
     left: -0.8rem;
     z-index: 2;
     
-    content: '';
+    content: '\2022';
     display: inline-block;
     box-sizing: border-box;
     width: 1.6rem;
@@ -447,6 +455,12 @@ h1.hero-headline {
     border: 1px solid #ccc;
     border-radius: 50% 0 50% 50%;
     
+    color: #888;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    text-align: center;
+    
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
@@ -781,7 +795,7 @@ p.authorship a {
     left: 7rem;
     z-index: 2;
     
-    content: '';
+    content: '\2022';
     display: inline-block;
     box-sizing: border-box;
     width: 1.6rem;
@@ -791,6 +805,12 @@ p.authorship a {
     border: 1px solid #ccc;
     border-radius: 50% 0 50% 50%;
     
+    color: #888;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    text-align: center;
+    
+    -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
@@ -849,6 +869,10 @@ p.authorship a {
     line-height: 1.6em;
 }
 
+.archive-story:nth-child(n + 6):nth-child(-n + 10) {
+    display: none;
+}
+
 .archive-story:nth-child(1n + 6) .archive-image {
     display: none;
 }
@@ -863,6 +887,7 @@ p.authorship a {
 /* Footer */
 
 footer.footer {
+    box-sizing: border-box;
     padding: 5rem 0;
     
     background-color: #222;

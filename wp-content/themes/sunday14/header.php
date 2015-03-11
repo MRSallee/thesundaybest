@@ -4,12 +4,13 @@
         <title><?php wp_title('-','true','right'); ?><?php bloginfo('name'); ?></title>
         <link rel="stylesheet" type="text/css" href="http://thesundaybe.st/wp-content/themes/sunday14/fonts.css"/>
         <link rel="stylesheet" type="text/css" href="http://thesundaybe.st/wp-content/themes/sunday14/style.css"/>
+        <link rel="stylesheet" type="text/css" href="http://thesundaybe.st/wp-content/themes/sunday14/style-mobile.css"/>
         <link rel="stylesheet" type="text/css" href="http://thesundaybe.st/wp-content/themes/sunday14/gallery.css"/>
         <link rel="shortcut icon" href="http://thesundaybe.st/wp-content/themes/sunday/tsb-favicon.png"/>
         <link rel="stylesheet" href="http://thesundaybe.st/wp-content/themes/sunday14/swipebox.css" type="text/css"/>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="http://thesundaybe.st/js-global/swipebox/source/jquery.swipebox.js"></script>
-        <script type="text/javascript" src="http://thesundaybe.st/wp-content/themes/sunday14/sticky.js"></script>
+        <script type="text/javascript" src="http://thesundaybe.st/wp-content/themes/sunday14/nav.js"></script>
         
         <script type="text/javascript">
             $(window).load(function() {
@@ -34,10 +35,11 @@
                     stickyIni();
                 });
                 
-                $('a[href*="<?php the_permalink(); ?>"').addClass('current');
+                $('a[href*="<?php the_permalink(); ?>"]').addClass('current');
             });
         </script>
-
+        
+        <meta name="viewport" content="width=device-width">
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:creator" content="MRSallee">
 		<meta name="twitter:url" content="<?php the_permalink(); ?>">
@@ -65,5 +67,7 @@
 		  })();
 
 		</script>
+        
+        <link rel="prerender" href="<?php echo get_permalink(get_adjacent_post(false,'',true)); ?>"/>
     </head>
     <body>

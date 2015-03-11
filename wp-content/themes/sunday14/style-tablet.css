@@ -1,0 +1,290 @@
+@media screen and (max-width: 1024px) {
+    .g-container {
+        position: fixed;
+        z-index: 99999;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        padding: 0 3.5rem;
+
+        font-size: 0;
+        line-height: 0;
+    }
+
+    .g-hide {
+        opacity: 0.0;
+    }
+
+    .g-col {
+        display: inline-block;
+        width: 9rem;
+        height: 100%;
+
+        margin-right: 3rem;
+
+        background-color: rgba(0,0,0, 0.05);
+
+        color: rgba(0,0,0, 0.1);
+        font-size: 2rem;
+        line-height: 100vh;
+        text-align: center;
+    }
+
+    .g-col:nth-last-child(5) {
+        margin-right: 0;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    body {
+        
+    }
+    
+    h2 {
+        width: 93rem;
+        padding: 0 0 3rem 0;
+        margin: 9rem auto -2rem auto;
+        
+        font-size: 4.2rem;
+    }
+    
+    h3 {
+        width: 93rem;
+        margin: 8rem auto -3rem auto;
+        
+        font-size: 2.4rem;
+    }
+    
+    
+    
+    /* Content */
+    
+    .content p {
+        width: 93rem;
+        margin: 5rem auto;
+        
+        font-size: 2.6rem;
+    }
+    
+    .content ul, .content ol {
+        width: 93rem;
+        margin: 5rem auto;
+        
+        font-size: 2.6rem;
+    }
+    
+    .content blockquote {
+        width: 93rem;
+        padding: 1px 6rem;
+        margin: 5rem auto;
+    }
+    
+    .pull-quote {
+        width: 93rem;
+        padding: 9rem 12rem;
+        margin: 8rem auto;
+        
+        font-size: 4.2rem;
+    }
+    
+    .image-caption {
+        padding: 5rem 3rem 2rem 3rem;
+        
+        font-size: 2.4rem;
+    }
+    
+    .video-frame {
+    }
+    
+    
+    
+    /* Hero */
+    
+    .hero-container {
+        height: 75rem;
+    }
+    
+    .hero-logo {
+        font-size: 5rem;
+    }
+    
+    .hero-divider, .byline-divider {
+        width: 69rem;
+        
+        font-size: 5rem;
+    }
+
+    .hero-divider:before, .byline-divider:before {
+        top: 2.4rem;
+        
+        height: 0.2rem;
+    }
+
+    .hero-divider:after, .byline-divider:after {
+        top: 2.4rem;
+        
+        height: 0.2rem;
+    }
+    
+    .hero-content {
+        width: 69rem;
+        height: calc(100% - 27rem);
+    }
+    
+    h1.hero-headline {
+        font-size: 8.4rem;
+    }
+    
+    .hero-subheadline {
+        font-size: 2.6rem;
+        margin: 3rem 0 0 0;
+    }
+    
+    .hero-date {
+        padding: 0 0 5rem 0;
+        
+        font-size: 2.4rem;
+        line-height: 3rem;
+    }
+    
+    
+    
+    /* Multi-pages */
+    
+    .multi-pages {
+        width: 100%;
+        
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    .multi-pages.fixed-bottom {
+    }
+    
+    .multi-pages.absolute-bottom {
+    }
+    
+    .multi-pages a {
+        font-size: 2rem;
+    }
+    
+    .multi-pages a.current + a {
+    }
+    
+    .multi-pages a:nth-child(1) {
+    }
+    
+    .multi-pages a.current + a:before {
+    }
+    
+    
+    
+    /* Byline */
+    
+    .byline-content {
+        width: 93rem;
+        margin: 3rem auto 0 auto;
+    }
+    
+    .byline-image {
+        width: 9rem;
+        height: 9rem;
+    }
+    
+    .byline-copy {
+        width: 81rem;
+        padding: 0 0 0 3rem;
+        margin: 0 0 0 3rem;
+        
+        font-size: 2.6rem;
+    }
+    
+    p.authorship {
+        margin: 0;
+    }
+    
+    
+    
+    /* Previous */
+    
+    .archive {
+        padding: 7rem 0 2rem 0;
+    }
+    
+    .previous-container {
+        width: 69rem;
+        height: 52rem;
+    }
+    
+    .previous-heading {
+        padding: 5rem 0 0 0;
+        
+        font-size: 2.4rem;
+    }
+    
+    .previous-content {
+    }
+    
+    .previous-headline {
+        font-size: 6rem;
+    }
+    
+    .previous-subheadline {
+        font-size: 2.6rem;
+    }
+    
+    .previous-cta {
+    }
+    
+    
+    
+    /* Archive */
+    
+    .archive h2 {
+    }
+    
+    .archive-container {
+    }
+    
+    .archive-story {
+    }
+    
+    .archive-link.current:before {
+    }
+    
+    .archive-image {
+    }
+    
+    .archive-meta {
+    }
+    
+    .archive-headline {
+    }
+    
+    .archive-subheadline {
+    }
+    
+    .archive-story:nth-child(1n + 6) .archive-meta {
+    }
+    
+    
+    
+    /* Footer */
+    
+    footer.footer {
+    }
+    
+    .footer .copyright {
+    }
+    
+    .footer .copyright span.tsb {
+    }
+    
+    .footer .mark {
+    }
+}
